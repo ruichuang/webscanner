@@ -1,14 +1,23 @@
 extends layout
 
 block content
-  h1= title
-  p Driver Licence #: #{dlNum}
-  p First Name: #{fname}
-  p Last Name: #{lname}
-  p Expiration Date: #{expirationDate}
-  p Date of Birth: #{dob}
-  p Issue Date: #{issueDate}
-  p Sex: #{sex}
-  p Address: #{address}, #{city}, #{province}
-  
+  div.data-view
+    div.title-container
+      div.display-title 
+        h1 Driver 
+        h1 Licence   
+        h1 Info 
+        h1 Display 
+    div.data-container
+      div.data
+        h3 #{fname} #{lname}
+        p Driver Licence #: #{dlNum}
+        p Address: #{address}, #{city}, #{province}
+        p Post Code: #{postCode}
+        p Expiration Date: #{expirationDate}
+        p Date of Birth: #{dob}
+        p Issue Date: #{issueDate}
+        p Sex: #{sex}
+        
+      
   
